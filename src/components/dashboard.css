@@ -1,0 +1,49 @@
+
+.dash-heading{
+    margin: 0.6em 0 0.5em 0;
+    padding: 3em 0.6em 0 0.6em;
+}
+.dash-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    border-bottom: 0.1em solid rgb(121, 120, 120);
+}
+.dash-container *{
+    margin: 0.8em;
+}
+.botName{
+    width: 30%;
+}
+.value{
+    width: 15%;
+}
+.cgmr-value{
+    color: rgb(0, 184, 0);
+}
+.dash-buttons{
+    display: flex;
+    flex-direction: column;
+}
+.dash-buttons *{
+    padding: 0.3em;
+    border-radius: 5px;
+    text-align: center;
+}
+.link-seemore{
+    text-decoration: none;
+    border: 0.1em solid rgb(16, 212, 196);
+    color: rgb(16, 212, 196);
+    transition: ease-in-out 0.2s;
+}
+.link-seemore:hover{
+    color: white;
+    background-color: rgb(16, 212, 196)
+}
+
+@media only screen and (max-width:515px) {
+   .dash-buttons{
+       width: 100%;
+   }
+}
