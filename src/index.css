@@ -1,18 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-*,*::after,*::before{
+*,
+*::after,
+*::before {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
 }
-.fWeight-1000{
+.fWeight-1000 {
   font-weight: 1000;
 }
-body{
+body {
   background-color: rgb(251, 251, 251);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
+  min-width: 300px;
 }
-#root{
- font-size: 1em;
+#root {
+  font-size: 1em;
 }

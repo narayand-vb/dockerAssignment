@@ -1,20 +1,20 @@
-
-
-.container{
-    width: 95%;
-    margin: 2em auto;
-    background-color: white;
-    box-shadow: 0px 0px 2px black;
+/* Parent div of every page */
+.container {
+  width: 95%;
+  margin: 2em auto;
+  background-color: white;
+  box-shadow: 0px 0px 2px black;
 }
 
-.buybtn{
-    color: blue;
-    border: 0.1em solid blue;
-    background-color: transparent;
-    transition: ease-in-out 0.2s;
+/* CSS for every btn used in this assignment */
+.btn {
+  color: blue;
+  border: 0.1em solid blue;
+  background-color: transparent;
+  transition: ease-in-out 0.2s;
 }
-.buybtn:hover{
-    color: white;
-    background-color: blue;
-    cursor: pointer;
+.btn:hover {
+  color: white;
+  background-color: blue;
+  cursor: pointer;
 }

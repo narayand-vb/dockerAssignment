@@ -1,0 +1,18 @@
+.del-btn {
+  padding: 0.3em;
+  border-radius: 5px;
+  text-align: center;
+  color: red;
+  border: 0.1em solid red;
+}
+.del-btn:hover {
+  background-color: red;
+  color: white;
+}
+
+@media only screen and (max-width: 365px) {
+  .del-btn {
+    width: 80%;
+    margin: 0em auto 1em auto;
+  }
+}

@@ -1,22 +1,20 @@
-
-
-.navbar{
-    box-shadow: 1px 1px 3px black;
-    background-color: white;
+.navbar {
+  box-shadow: 1px 1px 3px black;
+  background-color: white;
 }
-.menu{
-    margin: 0% 3em;
-    line-height: 3.3em;
+.menu {
+  margin: 0% 3em;
+  line-height: 3.3em;
 }
-.menu *{
-    color: black;
-    padding: 0.9em;
-    text-decoration: none;
-
-
+.menu * {
+  color: black;
+  padding: 0.9em;
+  text-decoration: none;
 }
-.menu *:hover,a.dashboard, a.cart{
-    color: rgb(90, 90, 90);
-    border-bottom: 0.2em solid black;
-    border-radius: 5px;    
+.menu *:hover,
+a.dashboard,
+a.cart {
+  color: rgb(90, 90, 90);
+  border-bottom: 0.2em solid black;
+  border-radius: 5px;
 }

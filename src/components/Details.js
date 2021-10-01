@@ -4,15 +4,15 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import { useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 
-
 const Details = () => {
   const { id } = useParams();
   const data = useSelector((state) => state.products.bots);
   const dispatch = useDispatch();
 
-  const onclickHandler = () => {
+  const onclickHandler = (id) => {
     dispatch({
       type: "cartInc",
+      id: id,
     });
   };
   return (
@@ -27,7 +27,6 @@ const Details = () => {
                   <div className="bot-des botName">
                     <p className=" fWeight-1000">{d.bot}</p>
                     <p>{d.description}</p>
-                   
                   </div>
                   <div className="indexValue-container value">
                     <p>index value</p>
@@ -38,11 +37,15 @@ const Details = () => {
                     <p className="fWeight-1000 cgmr-value">{d.cagr}</p>
                   </div>
                   <div className="details-btn">
-                      <p className="moderate-icon-container">MODERATE RISK </p><i class="bi bi-thermometer-half moderate-icon"></i>
-                      <button className="details-buy buybtn" onClick={onclickHandler}>
-                        Buy
-                      </button>
-                    </div>
+                    <p className="moderate-icon-container">MODERATE RISK </p>
+                    <i class="bi bi-thermometer-half moderate-icon"></i>
+                    <button
+                      className="details-buy btn"
+                      onClick={() => onclickHandler(d.id)}
+                    >
+                      Buy
+                    </button>
+                  </div>
                 </div>
               </div>
             </>

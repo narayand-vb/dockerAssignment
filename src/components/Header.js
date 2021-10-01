@@ -13,7 +13,7 @@ const Header = () => {
             Dashboard
           </NavLink>
           <NavLink activeClassName="cart" exact to="/cart">
-            cart-{cartNo}
+            cart - {cartNo}
           </NavLink>
         </div>
       </nav>
