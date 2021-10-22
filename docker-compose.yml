@@ -4,7 +4,6 @@ services:
   dev:
     container_name: dockerAssignment
     image: bot
-
     build:
      context: .
      dockerfile: Dockerfile
